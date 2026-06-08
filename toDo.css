@@ -22,7 +22,7 @@ h1 {
     padding: 14px 28px;
     border: none;
     border-radius: 14px;
-    background: linear-gradient(120deg, #388bff, #510f0f);
+    background: linear-gradient(120deg, #388bff, #00000);
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -32,7 +32,7 @@ h1 {
 }
 
 #addTask:hover {
-    background: linear-gradient(120deg, #510f0f, #388bff);
+    background: linear-gradient(120deg, #00000, #388bff);
     box-shadow: 0 15px 30px rgba(74, 194, 154, 0.4);
     transform: translateY(-2px);
 }
