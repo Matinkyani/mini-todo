@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MiniToDo</title>
+    <link rel="stylesheet" href="/asset/style/toDo.css" /> 
+</head>
+<body dir="rtl">
+    <h1>TODO</h1>
+    <button id="addTask">➕ &nbsp; افزودن تسک</button>
+    
+    <ul id="taskList"></ul>
+
+    <dialog id="taskModal">
+        <form id="taskForm">
+            <h2 id="modalTitle">تسک جدید</h2>
+            
+            <input type="text" id="taskTitle" placeholder="عنوان اصلی تسک" required>
+            
+            <div id="subTasksContainer">
+               
+            </div>
+            
+            <button class="plus-btn" type="button" onclick="addSubTaskInput()">
+                ➕ افزودن توضیح
+            </button>
+
+            <div class="modal-actions">
+                <button type="submit" id="saveBtn">ذخیره</button>
+                <button type="button" id="cancelBtn" onclick="taskModal.close()">انصراف</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="/asset/js/toDo.js"></script> 
+</body>
+</html>
